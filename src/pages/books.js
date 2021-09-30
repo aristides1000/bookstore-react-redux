@@ -1,26 +1,19 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {
-  loadBooks, createBook,
-} from '../redux/books/books';
+import { loadBooks } from '../redux/books/books';
 import ElementBook from '../components/ElementBook';
+import BookForm from '../components/BookForm';
 
 const Books = () => {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
   const loadBooksAction = bindActionCreators(loadBooks, dispatch);
-  const createBookAction = bindActionCreators(createBook, dispatch);
 
   useEffect(() => {
     loadBooksAction();
     return null;
   }, []);
-
-  const bookCreate = {
-    author: 'Robert Greene',
-    title: 'Mastery',
-  };
 
   return (
     <div className="container-fluid">
@@ -33,26 +26,7 @@ const Books = () => {
               </li>
             ))}
           </ul>
-          <form className="w-50">
-            <div className="mb-3">
-              <input type="text" name="bookAuthor" className="form-control" placeholder="Author" />
-            </div>
-            <div className="mb-3">
-              <input type="text" name="bookTitle" className="form-control" placeholder="Title" />
-            </div>
-            <button
-              onClick={
-                (e) => {
-                  e.preventDefault();
-                  createBookAction(bookCreate);
-                }
-              }
-              className="btn btn-primary"
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>
+          <BookForm />
         </div>
       </div>
     </div>
