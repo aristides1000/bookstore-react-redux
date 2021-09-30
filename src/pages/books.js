@@ -20,9 +20,13 @@ const Books = () => {
       <div className="row">
         <div className="col-12 d-flex flex-column align-items-center">
           <ul>
-            {books.map((book) => (
-              <li key={book.id} className="li-item">
-                <ElementBook title={book.title} author={book.author} bookId={book.id} />
+            {Object.keys(books).map((id) => (
+              <li key={id} className="li-item">
+                <ElementBook
+                  title={books[id][0].title}
+                  category={books[id][0].category}
+                  bookId={id}
+                />
               </li>
             ))}
           </ul>
