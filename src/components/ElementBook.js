@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { removeBook } from '../redux/books/books';
 
-function ElementBook({ title, author, bookId }) {
+function ElementBook({ title, category, bookId }) {
   const dispatch = useDispatch();
   const removeBookAction = bindActionCreators(removeBook, dispatch);
   return (
     <div className="d-flex justify-content-between mt-2">
       <span className="d-flex align-items-center">
-        {'Author: '}
-        {author}
+        {'category: '}
+        {category}
         {' '}
         {'Title: '}
         {title}
@@ -23,7 +23,7 @@ function ElementBook({ title, author, bookId }) {
 
 ElementBook.propTypes = {
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   bookId: PropTypes.string.isRequired,
 };
 
