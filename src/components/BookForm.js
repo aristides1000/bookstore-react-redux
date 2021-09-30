@@ -7,21 +7,21 @@ function BookForm() {
   const dispatch = useDispatch();
   const createBookAction = bindActionCreators(createBook, dispatch);
 
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const [title, setTitle] = useState('');
 
-  const AuthorUpdate = (e) => setAuthor(e.target.value);
+  const categoryUpdate = (e) => setCategory(e.target.value);
   const titleUpdate = (e) => setTitle(e.target.value);
 
   const addBook = (e) => {
     e.preventDefault();
-    if (title && author) {
+    if (title && category) {
       createBookAction({
         title,
-        author,
+        category,
       });
       setTitle('');
-      setAuthor('');
+      setCategory('');
     }
   };
 
@@ -31,7 +31,7 @@ function BookForm() {
         <input type="text" name="bookTitle" className="form-control" placeholder="Title" onChange={titleUpdate} value={title} />
       </div>
       <div className="mb-3">
-        <input type="text" name="bookAuthor" className="form-control" placeholder="Author" onChange={AuthorUpdate} value={author} />
+        <input type="text" name="bookCategory" className="form-control" placeholder="Category" onChange={categoryUpdate} value={category} />
       </div>
       <button type="submit" className="btn btn-primary">Submit</button>
     </form>
