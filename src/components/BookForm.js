@@ -26,15 +26,16 @@ function BookForm() {
   };
 
   return (
-    <form onSubmit={addBook} className="w-50">
-      <div className="mb-3">
-        <input type="text" name="bookTitle" className="form-control" placeholder="Title" onChange={titleUpdate} value={title} />
-      </div>
-      <div className="mb-3">
-        <input type="text" name="bookCategory" className="form-control" placeholder="Category" onChange={categoryUpdate} value={category} />
-      </div>
-      <button type="submit" className="btn btn-primary">Submit</button>
-    </form>
+    <div className="form-width-2">
+      <span className="Title-2 Text-Style-10">
+        ADD NEW BOOK
+      </span>
+      <form onSubmit={addBook}>
+        <input type="text" name="bookTitle" className="Lesson-Panel-2" placeholder="Title" onChange={titleUpdate} value={title} />
+        <input type="text" name="bookCategory" className="Lesson-Panel-3" placeholder="Category" onChange={categoryUpdate} value={category} />
+        <button type="submit" className="Rectangle-4 border-0">ADD BOOK</button>
+      </form>
+    </div>
   );
 }
 

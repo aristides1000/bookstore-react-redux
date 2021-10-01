@@ -13,17 +13,19 @@ import './components/index.css';
 ReactDOM.render(
   <React.StrictMode>
     <Router basename="/">
-      <Navbar />
-      <Provider store={store}>
-        <Switch>
-          <Route exact path="/">
-            <Books />
-          </Route>
-          <Route exact path="/categories">
-            <Categories />
-          </Route>
-        </Switch>
-      </Provider>
+      <div className="Bookstore-CMS">
+        <Navbar />
+        <Provider store={store}>
+          <Switch>
+            <Route exact path="/">
+              <Books />
+            </Route>
+            <Route exact path="/categories">
+              <Categories />
+            </Route>
+          </Switch>
+        </Provider>
+      </div>
     </Router>
   </React.StrictMode>,
   document.getElementById('root'),
