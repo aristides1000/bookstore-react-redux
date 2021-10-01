@@ -170,9 +170,10 @@
 }
 
 body {
-  width: 100rem;
-  height: 89.625rem;
-  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0 5rem 0;
   background-color: var(--pale-grey);
 }
 

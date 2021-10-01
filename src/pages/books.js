@@ -17,7 +17,7 @@ const Books = () => {
 
   return (
     <div className="container-fluid">
-      <div className="row panel-bg-books pb-5">
+      <div className="row panel-bg-books pb-5 mb-0 me-0">
         <div className="col-12 d-flex flex-column align-items-center pt-5">
           <ul className="d-flex flex-column align-items-center px-0">
             {Object.keys(books).map((id) => (
