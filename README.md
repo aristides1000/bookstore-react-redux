@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://wizardly-borg-3c9b3f.netlify.app/)
+[Live Demo Link](https://suspicious-einstein-3746cf.netlify.app/)
 
 ## Getting Started
 1. Clone this repo on your local machine
