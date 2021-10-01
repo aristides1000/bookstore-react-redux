@@ -1,54 +1,67 @@
 @font-face {
-  font-family: FuturaPT;
-  src: local(FuturaPT-Book),
+  font-family: FuturaPT, sans-serif;
+  src:
+    local(futurapt-book),
     url(../assets/fonts/FuturaPT-Book.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
 }
+
 @font-face {
-  font-family: Montserrat;
-  src: local(Montserrat-Regular),
+  font-family: Montserrat, sans-serif;
+  src:
+    local(montserrat-regular),
     url(../assets/fonts/Montserrat-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
 }
+
 @font-face {
-  font-family: Montserrat;
-  src: local(Montserrat-Bold),
+  font-family: Montserrat, sans-serif;
+  src:
+    local(montserrat-bold),
     url(../assets/fonts/Montserrat-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
 }
+
 @font-face {
-  font-family: PlayfairDisplay;
-  src: local(PlayfairDisplay-Regular),
+  font-family: PlayfairDisplay, sans-serif;
+  src:
+    local(playfairdisplay-regular),
     url(../assets/fonts/PlayfairDisplay-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
 }
+
 @font-face {
-  font-family: ProximaNova;
-  src: local(ProximaNova-Regular),
+  font-family: ProximaNova, sans-serif;
+  src:
+    local(proximanova-regular),
     url(../assets/fonts/Raleway-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
 }
+
 @font-face {
-  font-family: RobotoSlab;
-  src: local(RobotoSlab-Bold),
+  font-family: RobotoSlab, sans-serif;
+  src:
+    local(robotoslab-bold),
     url(../assets/fonts/RobotoSlab-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
 }
+
 @font-face {
-  font-family: SourceSerifPro;
-  src: local(SourceSerifPro-Bold),
+  font-family: SourceSerifPro, sans-serif;
+  src:
+    local(sourceserifpro-bold),
     url(../assets/fonts/SourceSerifPro-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
@@ -59,7 +72,6 @@
   --bubble-gum-pink: #ff5ab7;
   --black: #1e1e1e;
   --pinkish-grey: #c4c4c4;
-  --black: #000;
   --black-5: rgba(0, 0, 0, 0.05);
   --pale-grey: #f5f6fa;
   --azure: #0290ff;
@@ -69,7 +81,7 @@
 }
 
 .Text-Style-5 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -78,8 +90,9 @@
   letter-spacing: normal;
   color: var(--azure);
 }
+
 .Text-Style-6 {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -88,8 +101,9 @@
   letter-spacing: -0.2px;
   color: #121212;
 }
+
 .Text-Style-10 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -98,8 +112,9 @@
   letter-spacing: -0.18px;
   color: #888;
 }
+
 .Text-Style-2 {
-  font-family: SourceSerifPro;
+  font-family: SourceSerifPro, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -108,8 +123,9 @@
   letter-spacing: normal;
   color: #fff;
 }
+
 .Text-Style-4 {
-  font-family: FuturaPT;
+  font-family: FuturaPT, sans-serif;
   font-size: 1.063rem;
   font-weight: normal;
   font-stretch: normal;
@@ -118,8 +134,9 @@
   letter-spacing: 3.78px;
   color: #fff;
 }
+
 .Text-Style {
-  font-family: ProximaNova;
+  font-family: ProximaNova, sans-serif;
   font-size: 1.063rem;
   font-weight: normal;
   font-stretch: normal;
@@ -128,8 +145,9 @@
   letter-spacing: normal;
   color: #6782a4;
 }
+
 .Text-Style-8 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   font-stretch: normal;
@@ -138,8 +156,9 @@
   letter-spacing: -0.15px;
   color: var(--pinkish-grey);
 }
+
 .Text-Style-9 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -148,8 +167,9 @@
   letter-spacing: normal;
   color: #121212;
 }
+
 .Text-Style-7 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -158,8 +178,9 @@
   letter-spacing: 1.9px;
   color: #121212;
 }
+
 .Text-Style-3 {
-  font-family: PlayfairDisplay;
+  font-family: PlayfairDisplay, sans-serif;
   font-size: 0.75rem;
   font-weight: normal;
   font-stretch: normal;
@@ -188,7 +209,7 @@ body {
   width: 15rem;
   height: 2.313rem;
   margin: 0.375rem 0 0.125rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -202,7 +223,7 @@ body {
   width: 3.688rem;
   height: 1rem;
   margin: 1.125rem 2.563rem 0.688rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -218,7 +239,7 @@ body {
   height: 1rem;
   margin: 1.125rem 2.563rem 0.688rem 2.563rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -269,7 +290,7 @@ body {
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -283,7 +304,7 @@ body {
   width: 22.813rem;
   height: 1.813rem;
   margin: 0.188rem 9.688rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -297,7 +318,7 @@ body {
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -311,7 +332,7 @@ body {
   width: 4.563rem;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -346,7 +367,7 @@ body {
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -361,7 +382,7 @@ body {
   height: 1.125rem;
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -376,7 +397,7 @@ body {
   height: 1.125rem;
   margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -390,7 +411,7 @@ body {
   width: 13.25rem;
   height: 1.313rem;
   margin: 0.438rem 0 0.25rem 3.688rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -407,7 +428,7 @@ body {
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
   background-color: var(--azure);
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -431,7 +452,7 @@ body {
   width: 10.875rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -449,7 +470,7 @@ body {
   border-radius: 4px;
   border: solid 1px var(--white);
   background-color: #fff;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   font-stretch: normal;
@@ -467,7 +488,7 @@ body {
   border-radius: 4px;
   border: solid 1px var(--white);
   background-color: #fff;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   font-stretch: normal;
@@ -484,7 +505,7 @@ body {
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   background-color: var(--azure);
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
   font-stretch: normal;
