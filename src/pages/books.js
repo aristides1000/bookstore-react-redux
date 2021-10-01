@@ -17,9 +17,9 @@ const Books = () => {
 
   return (
     <div className="container-fluid">
-      <div className="row">
-        <div className="col-12 d-flex flex-column align-items-center">
-          <ul>
+      <div className="row panel-bg-books pb-5">
+        <div className="col-12 d-flex flex-column align-items-center pt-5">
+          <ul className="d-flex flex-column align-items-center px-0">
             {Object.keys(books).map((id) => (
               <li key={id} className="li-item">
                 <ElementBook
@@ -29,6 +29,7 @@ const Books = () => {
                 />
               </li>
             ))}
+            <li className="border-bottom width-books-li mt-3 form-width" />
           </ul>
           <BookForm />
         </div>
